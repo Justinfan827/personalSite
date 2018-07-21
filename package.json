@@ -1,0 +1,24 @@
+{
+  "name": "my-website-2.0",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "mdbreact": "git+https://github.com/mdbootstrap/React-Bootstrap-with-Material-Design.git#react-upgrade",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-pdf": "^3.0.5",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.13.7"
+  }
+}
