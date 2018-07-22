@@ -1,0 +1,23 @@
+html,
+body,
+header,
+#root,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("./Hong_Kong.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fixed-img {
+    size:50%;
+}
+.max-height {
+    height:100%
+}
+

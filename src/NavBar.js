@@ -11,6 +11,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "mdbreact";
+import './Navbar.css';
 import { BrowserRouter as Router } from "react-router-dom";
 
 class NavBar extends Component {
@@ -40,7 +41,7 @@ class NavBar extends Component {
   render() {
     return (
       <Router>
-        <Navbar color="transparent" light expand="md" scrolling>
+        <Navbar color="transparent" dark expand="lg" scrolling fixed="top">
           <div className="container-fluid">
             {!this.state.isWideEnough && (
               <NavbarToggler onClick={this.onClick} />
@@ -48,13 +49,13 @@ class NavBar extends Component {
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav left>
                 <NavItem active>
-                  <NavLink to="#">Blog</NavLink>
+                  <NavLink to="#">Github</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="#">Resume</NavLink>
+                  <NavLink to="#">LinkedIn</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="#">Pricing</NavLink>
+                  <NavLink to="#">Gmail</NavLink>
                 </NavItem>
                 <NavItem>
                   <Dropdown
