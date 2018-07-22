@@ -1,32 +1,40 @@
-.App {
-  text-align: center;
+html,
+body,
+header,
+#root,
+#intro {
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#intro {
+  background: url("./resources/Hong_Kong.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#imgHeader {
+  max-width: 20rem;
+}
+.max-height {
+  height: 100%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.max-width {
+  width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.imgContainer,
+.imgHeadshot {
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgContainer {
+  padding-top: 5rem;
+  width: 400px;
+}
+
+#wrapper {
+  padding-top: 1rem;
 }

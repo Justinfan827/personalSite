@@ -11,10 +11,10 @@ import {
   DropdownMenu,
   DropdownItem
 } from "mdbreact";
-import './Navbar.css';
 import { BrowserRouter as Router } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-class NavBar extends Component {
+export default class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,13 +49,23 @@ class NavBar extends Component {
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav left>
                 <NavItem active>
-                  <NavLink to="#">Github</NavLink>
+                  <NavLink to="#">
+                    <div>
+                      <FontAwesomeIcon icon={['fab', 'github']} />
+                    </div>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="#">LinkedIn</NavLink>
+                  <NavLink to="#">
+                    <div>
+                      <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                    </div></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="#">Gmail</NavLink>
+                  <NavLink to="#">
+                    <div>
+                      <FontAwesomeIcon icon={['fas', 'envelope']} />
+                    </div></NavLink>
                 </NavItem>
                 <NavItem>
                   <Dropdown
@@ -94,4 +104,3 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
