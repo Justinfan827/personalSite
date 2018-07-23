@@ -48,7 +48,7 @@ export default class NavBar extends Component {
             )}
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav left>
-                <NavItem active>
+                <NavItem>
                   <NavLink to="#">
                     <div>
                       <FontAwesomeIcon icon={['fab', 'github']} />
@@ -68,7 +68,7 @@ export default class NavBar extends Component {
                     </div></NavLink>
                 </NavItem>
                 <NavItem>
-                  <Dropdown
+                  {/* <Dropdown
                     isOpen={this.state.dropdownOpen}
                     toggle={this.toggle}
                   >
@@ -81,11 +81,11 @@ export default class NavBar extends Component {
                       <DropdownItem href="#">Something else here</DropdownItem>
                       <DropdownItem href="#">Something else here</DropdownItem>
                     </DropdownMenu>
-                  </Dropdown>
+                  </Dropdown> */}
                 </NavItem>
               </NavbarNav>
               <NavbarNav right>
-                <NavItem>
+                {/* <NavItem>
                   <form className="form-inline md-form mt-0">
                     <input
                       className="form-control mr-sm-2 mb-0 text-white"
@@ -94,7 +94,7 @@ export default class NavBar extends Component {
                       aria-label="Search"
                     />
                   </form>
-                </NavItem>
+                </NavItem> */}
               </NavbarNav>
             </Collapse>
           </div>
