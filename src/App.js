@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div class="max-height">
         <div id="intro" class="view">
-          <div class="mask rgba-black-strong">
+          <div class="scroll mask rgba-black-strong">
             <NavBar />
             <Switch>
               <Route path="/" component={landing_page} exact />

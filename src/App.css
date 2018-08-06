@@ -25,16 +25,26 @@ header,
   width: 100%;
 }
 
-.imgContainer,
+/* .imgContainer,
 .imgHeadshot {
   margin: auto;
-}
+} */
 
 .imgContainer {
-  padding-top: 5rem;
-  width: 400px;
+  width: 100%;
 }
 
 #wrapper {
   padding-top: 1rem;
+  width: 100%
+}
+
+.scroll {
+  overflow: scroll !important;
+}
+
+@media screen and (max-height: 700px) {
+  .mobile-padding {
+    margin-top: 5rem
+  }
 }
